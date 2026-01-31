@@ -5,9 +5,9 @@ const app = express();
 const PORT = process.env.PORT ?? 8080;
 
 app.get("/", (req, res) => {
-  return res.status(200).json({msg:"app running on v1"});
+  return res.status(200).json({ msg: "app running on v2" });
 });
 
-app.listen(PORT, ()=>{
-    console.log("server running on port: ", PORT)
-})
+app.listen(PORT, () => {
+  console.log("server running on port: ", PORT);
+});
